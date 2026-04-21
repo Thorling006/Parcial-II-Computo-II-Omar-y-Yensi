@@ -12,7 +12,12 @@ $resultado = $conexion->query($sql);
 </head>
 <body>
     <div class="contenedor">
-        <h1>Farmacia Brasil - Sistema de Medicamentos</h1>
+        <div class="header">
+            <img src="img/logo.jpg" alt="Logo Farmacia Brasil" class="logo">
+            <h1>Farmacia Brasil</h1>
+        </div>
+
+        <h2>Sistema de Medicamentos</h2>
         <a class="btn" href="login.php">Iniciar sesión</a>
 
         <h2>Listado de medicamentos</h2>
