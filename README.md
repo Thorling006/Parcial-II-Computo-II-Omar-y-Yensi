@@ -22,17 +22,22 @@ En una aplicación web con base de datos que maneja datos de usuarios existen va
 Para mitigar estos riesgos, en el sistema se valida la sesión de usuario antes de permitir el acceso al panel administrativo o al formulario de registro. También se validan los datos ingresados en los formularios, reduciendo errores o entradas inválidas. Como mejora de seguridad, el sistema puede implementarse con consultas preparadas, contraseñas cifradas y control de permisos por rol. De esta forma se protege mejor la información de la empresa y de los usuarios.
 
 # Diccionario de datos
-Nombre tabla: usuarios
-Columna	Tipo de dato	Límite de caracteres	¿Es nulo?	Descripción
-id	INT	No aplica	No	Identificador único del usuario
-usuario	VARCHAR	50	No	Nombre de usuario para iniciar sesión
-password	VARCHAR	255	No	Contraseña del usuario
-rol	VARCHAR	20	No	Rol asignado dentro del sistema
-Nombre tabla: medicamentos
-Columna	Tipo de dato	Límite de caracteres	¿Es nulo?	Descripción
-id	INT	No aplica	No	Identificador único del medicamento
-nombre	VARCHAR	100	No	Nombre del medicamento
-categoria	VARCHAR	50	No	Tipo o categoría del medicamento
-precio	DECIMAL	10,2	No	Precio del medicamento
-descripcion	TEXT	No aplica	Sí	Descripción adicional del medicamento
-stock	INT	No aplica	No	Cantidad disponible en inventario
+### Tabla: usuarios
+
+| Columna  | Tipo de dato | Límite | ¿Es nulo? | Descripción |
+|----------|--------------|--------|----------|-------------|
+| id       | INT          | —      | No       | Identificador único del usuario |
+| usuario  | VARCHAR      | 50     | No       | Nombre de usuario |
+| password | VARCHAR      | 255    | No       | Contraseña |
+| rol      | VARCHAR      | 20     | No       | Rol del usuario |
+
+### Tabla: medicamentos
+
+| Columna     | Tipo de dato | Límite | ¿Es nulo? | Descripción |
+|------------|--------------|--------|----------|-------------|
+| id         | INT          | —      | No       | Identificador del medicamento |
+| nombre     | VARCHAR      | 100    | No       | Nombre del medicamento |
+| categoria  | VARCHAR      | 50     | No       | Tipo de medicamento |
+| precio     | DECIMAL      | 10,2   | No       | Precio |
+| descripcion| TEXT         | —      | Sí       | Información adicional |
+| stock      | INT          | —      | No       | Cantidad disponible |
