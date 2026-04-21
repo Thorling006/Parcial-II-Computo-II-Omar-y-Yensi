@@ -41,3 +41,6 @@ Para mitigar estos riesgos, en el sistema se valida la sesión de usuario antes 
 | precio     | DECIMAL      | 10,2   | No       | Precio |
 | descripcion| TEXT         | —      | Sí       | Información adicional |
 | stock      | INT          | —      | No       | Cantidad disponible |
+# Credenciales
+Usuario: admin
+Contrseña: 123456
