@@ -42,5 +42,5 @@ Para mitigar estos riesgos, en el sistema se valida la sesión de usuario antes 
 | descripcion| TEXT         | —      | Sí       | Información adicional |
 | stock      | INT          | —      | No       | Cantidad disponible |
 # Credenciales
-Usuario: admin
+Usuario: admin <br>
 Contrseña: 123456
